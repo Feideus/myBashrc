@@ -6,7 +6,7 @@
 # ALIASES
 # ------------------------------------
 # Edit .bashrc
-alias bashedit='sudo open -a TextEdit ~/.bashrc'
+alias bashedit='vim ~/.bashrc'
 
 # Force terminal to recognize changes to .bashrc
 alias bashrefresh='source ~/.bashrc'
@@ -90,17 +90,16 @@ export PS1="${ps1_dir}${ps1_git}\$ "
 # ------------------------------------
 
 echo "----------------------------"
-echo "Loaded ~/.bashrc"
+echo "Loaded bashrc"
 echo ""
 echo "To edit run: bashedit"
 echo "To refresh run: bashrefresh"
 echo "All aliases: alias"
 echo "----------------------------"
 
-alias ll -as='ll'
-alias S4='cd ~/S4/sigdca-s41-webapp'
-alias S42F='cd ~/S42/S42-front'
-alias S42B='cd ~/S42/S42-back'
+alias S4="cd ~/S4/sigdca-s41-webapp"
+alias S42F="cd ~/S42/S42-front"
+alias S42B="cd ~/S42/S42-back"
 alias cleanstallnotest="mvn clean install -Dmaven.test.skip=true"
 alias S42G="cd ~/s42-geoserver-workspace"
 alias S43F="cd ~/S43/s43-front/"
@@ -116,3 +115,6 @@ alias suit="cd /D/Dvpt/Projets/Dev2022/suit/suit"
 alias servesuit="node --max_old_space_size=8048 ./node_modules/@angular/cli/bin/ng serve"
 alias ignoreuntracked="git ls-files --others --exclude-standard >> .gitignore"
 alias rebasedevelop="git fetch origin | git rebase origin develop"
+alias 0.4="cd /D/Dvpt/Projets/Dev2022/suit.0-4/suit"
+alias setup="cd D:/Dvpt/Tools/Scripts && sh setup_enviro.sh"
+alias shalom="cd ~/perso/shalomalerhem"
