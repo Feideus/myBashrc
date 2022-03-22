@@ -9,7 +9,7 @@
 alias bashedit='vim ~/.bashrc'
 
 # Force terminal to recognize changes to .bashrc
-alias bashrefresh='source ~/.bashrc'
+alias sourcebash='source ~/.bashrc'
 
 # Ideal directory listing
 alias ll="ls -laFG"
@@ -114,7 +114,8 @@ alias common="cd ~/sigdca-common/"
 alias suit="cd /D/Dvpt/Projets/Dev2022/suit/suit"
 alias servesuit="node --max_old_space_size=8048 ./node_modules/@angular/cli/bin/ng serve"
 alias ignoreuntracked="git ls-files --others --exclude-standard >> .gitignore"
-alias rebasedevelop="git fetch origin | git rebase origin develop"
+alias rebasedevelop="git fetch origin && git rebase origin develop"
 alias 0.4="cd /D/Dvpt/Projets/Dev2022/suit.0-4/suit"
 alias setup="cd D:/Dvpt/Tools/Scripts && sh setup_enviro.sh"
 alias shalom="cd ~/perso/shalomalerhem"
+alias pushbash="cd ~/myBashrc && cp ../.bashrc . && git add . && git commit -m 'MAJ bashrc' && git push origin master && cd ~"
